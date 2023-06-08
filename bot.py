@@ -7,7 +7,6 @@ load_dotenv()
 # My token
 bot = telebot.TeleBot(os.getenv('TOKEN'))
 openai.api_key = os.getenv('API_KEY')
-path = 'data_json'
 
 
 @bot.message_handler(commands=['start'])
